@@ -1,0 +1,223 @@
+*{
+    padding:0px;
+    margin:0px;
+
+}
+body{
+    background-color:#3D087BDE;
+}
+
+.clock{
+    padding:10px;
+    display: inline-block;
+   }
+.clock-box{
+    width:100px;
+    border-radius:5px;
+    padding:2px 8px;
+    border:1px solid black;
+    background-color:white;
+    font-size:10px;
+    display:inline-block;
+    margin-left:140px;
+   }
+  
+.time{
+    width:500px;
+    height:300px;
+    border-radius:5px;
+    background-color:white;
+    margin-bottom:20px;
+    padding-left:5px;
+    line-height: 75px;
+    box-sizing:border-box;
+    color:#65048f;
+   }
+.value{
+    padding:9px 40px;
+    font-size:12px;
+    color:#65048f;
+    margin-left:90px;
+    margin-right:20px;
+    font-weight: bold;
+ }
+
+ 
+ 
+.wakeup{
+    background-color:#8E53F0;
+     box-sizing:border-box;
+    padding:22px 37px;
+    font-weight:bolder;
+    color:white;
+    width:500px;
+    border-radius:5px;
+    margin-bottom:10px;
+    font-size: 25px;
+}
+
+
+
+#alarm{
+    width:270px;
+    padding:10px 60px;
+    color:white;
+    font-weight:bold;
+    background-image: linear-gradient(purple,pink);
+    display:inline-block;
+    position:relative;
+    bottom:30px;
+    }
+.al2{
+        color:white;
+        background-color:#9140B5;
+        width:210px;
+        font-size:10px;
+        padding:5px;
+        border-radius:5px;
+        display:inline-block;
+        line-height: 14px;;
+        margin-bottom:10px;
+
+    }
+.hours1{
+    height:80px;
+    border-radius:5px;
+    background-color:white;
+    margin-bottom:20px;
+    display:flex;
+    gap:8px;
+    padding:3px 10px;
+    width:450px;
+    justify-content: space-around;
+    
+
+}
+.item{
+    width:70px;
+    height:70px;
+    font-weight: bold;
+    font-size:20px;
+   margin-top: 20px;
+    
+}
+
+ .item5{
+    width:70px;
+    height:70px;
+    background-image: url(./AM_svg@2x.jpg);
+    text-align:center;
+    font-size:22px;
+    font-family: 'Segoe UI';
+} 
+.item3,.item4,.item2{
+    width:70px;
+    height:70px;
+    background-image:url(./timeline@2x.jpg);
+    text-align:center; 
+    font-size:26px;
+    color:blue;
+    }
+.hours2{
+    width:400px;
+    height:80px;
+    border-radius:5px;
+    background-color:lightcyan;
+    opacity:.6;
+    z-index:-1;
+    position:absolute;
+    right:190px;
+    top:33px;
+}
+.hours3{
+    width:350px;
+    height:80px;
+    border-radius:5px;
+    background-color:#CB52F8;
+    opacity:.6;
+    z-index:-2;
+    position: absolute; 
+    right:220px;
+    top:40px;
+}
+.healthy{
+    background-color:white;
+    padding:27px 10px;
+    font-weight:bold;
+    color:#8E53F0;
+    width:450px; 
+    border-radius:5px;
+    margin:10px 0px;
+    font-size: 22px;
+
+}
+#window{
+ 
+    border-radius:5px;
+    background-position: center;
+   }
+
+.main{
+  
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    }
+.container2{
+         margin-top:20px;
+}
+
+
+@media screen and (min-width:250px) and (max-width:600px){
+    
+    .main{
+        display:block;
+        margin: auto;
+        padding-left: 5px;
+        
+       
+    }
+    .time{
+        width:356px;
+        line-height: 17px;
+
+    }
+    .value{
+       position:relative;
+       bottom: 26px;
+       left:70px;
+    }
+    .wakeup{
+        width:356px;
+        margin-bottom: 50px;;
+    }
+    .hours2,.hours3{
+        display: none;
+    }
+   #alarm{
+    width:200px;
+    margin-left:90px;
+   }
+   .clock-box{
+    display:none;
+   }
+   .al2{
+    width:350px;
+    height:90px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+    
+   }
+   .healthy{
+    width:356px;
+    text-align: center;
+    padding:10px 0px;
+   }
+   .hours1{
+    width:336px;
+   }
+   #window{
+    width:356px;
+   }
+}
